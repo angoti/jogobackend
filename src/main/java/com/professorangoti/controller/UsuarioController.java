@@ -33,7 +33,7 @@ public class UsuarioController {
 	}
 	
 
-	@GetMapping("/teste/{inicio}")
+	@GetMapping("/{inicio}")
 	List<Usuario> teste(@PathVariable String inicio) {
 		return repositorio.findByUserStartingWith(inicio);
 	}
